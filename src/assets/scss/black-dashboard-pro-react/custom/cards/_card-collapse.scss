@@ -1,0 +1,59 @@
+.card-collapse {
+  .card {
+    margin-bottom: 1px;
+    background: $transparent-bg;
+    box-shadow: none;
+
+    .card-header {
+      position: relative;
+      padding: 5px 8px;
+
+      a[data-toggle="collapse"] {
+        display: block;
+        color: rgba($white, 1);
+        font-size: 15.5px;
+
+        i {
+          float: right;
+          font-size: 12px;
+          position: relative;
+          color: $primary;
+          top: 13.4px;
+          @extend .animation-transition-general;
+        }
+      }
+    }
+
+    .card-body {
+      padding: 0.75rem 1rem 0.5em 1.5rem;
+      font-size: 13.5px;
+      
+      &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        height: 2px;
+        background: rgba($black, 0.1);
+      }
+      
+      dl{
+        dt:hover{
+          color: rgba($indigo, 1);
+          background: rgba($black, 0.1);
+        }
+      }  
+    }
+  }
+
+  .card{
+    .card-header:hover{
+      background:rgba($indigo,0.5);
+    }
+
+    .card-header:active{
+      background:rgba($indigo,0.8);
+    }
+  }
+}

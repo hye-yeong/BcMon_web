@@ -1,0 +1,11 @@
+/* sidebar의 css 수정 파일 */
+
+logo 글 크기(BcMon)를 줄이려면
+./scss/black-dashboard-pro-react/custom/_sidebar-and-main-panel.scss 에서
+.simple-text를 찾아 들어갈 것.
+
+Category 크기나, padding, margin은
+./scss/black-dashboard-pro-react/custom/cards/_card-collapse.scss 에서
+.card-collapse 수정하면 된다.
+
+Category 안의 padding과 margin은 ./sidebar.css 

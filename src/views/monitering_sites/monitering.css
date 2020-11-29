@@ -1,0 +1,12 @@
+.card{
+  .card-body{
+    dl{
+      dt{
+        &:hover{
+          background:rgba($indigo,0.8);
+          color: $primary;
+        }
+      }
+    }
+  }
+}

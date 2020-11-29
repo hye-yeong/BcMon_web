@@ -1,0 +1,24 @@
+### SERVER : 210.125.29.152
+
+stages:
+- build
+- deploy
+Dockerfile_Build:
+  stage: build
+  script:
+
+  - docker stop bcmon_frontend
+  - docker rm bcmon_frontend
+  - docker rmi wolf.kmu.ac.kr:443/bcmon_frontend:latest
+  - docker pull wolf.kmu.ac.kr:443/bcmon_frontend:latest
+  tags:
+  - FRONTEND
+  
+Docker_Run:
+  stage: deploy
+  script:
+ 
+  - docker run -itd --restart always --name bcmon_frontend -v $HOME/front:/dev/front -p 4200:3000 wolf.kmu.ac.kr:443/bcmon_frontend:latest
+  - docker ps
+  tags:
+  - FRONTEND

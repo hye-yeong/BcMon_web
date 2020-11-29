@@ -1,0 +1,36 @@
+.card-evenoutline {
+  margin-top: 50px;
+  background: #3a3c5c;
+  height: auto;
+  padding-left: 20px;
+  padding-right: 20px;
+
+  .card-header {
+    .card-title {
+      h3 {
+        font-size:20px;
+        color: white;
+        font-weight: 520;
+        margin-bottom: 3px;
+      }
+    }
+    .card-category {
+      h3{
+        line-height: 1.4em;
+        margin-bottom: 5px;
+      }
+    }
+  }
+
+  .card-header,
+  .card-footer {
+    margin-left: 0;
+    margin-right: 0;
+    background-color: transparent;
+  }
+
+  &:not(.card-subcategories).card-body {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
